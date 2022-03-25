@@ -1,72 +1,72 @@
 [
     {
-      "_id": "1",
+      "id": "1",
       "price": "$100",
       "picture": "./images/Corsair K70 Mk.2.webp",
       "name": "Corsair K70 Mk.2"
     },
     {
-      "_id": "2",
+      "id": "2",
       "price": "$200",
       "picture": "./images/Razer Cynosa V2.webp",
       "name": "Razer Cynosa V2"
     },
     {
-      "_id": "3",
+      "id": "3",
       "price": "$250",
       "picture": "./images/Razer BlackWidow Lite.webp",
       "name": "Razer BlackWidow"
     },
     {
-      "_id": "4",
+      "id": "4",
       "price": "$150",
       "picture": "./images/Logitech G915.webp",
       "name": "Logitech G915"
     },
     {
-      "_id": "5",
+      "id": "5",
       "price": "$300",
       "picture": "./images/Corsair K70 RGB TKL Champion Series.webp",
       "name": "Corsair K70 RGB"
     },
     {
-      "_id": "6",
+      "id": "6",
       "price": "$280",
       "picture": "./images/HyperX Alloy Origins 60.webp",
       "name": "HyperX Alloy"
     },
     {
-      "_id": "7",
+      "id": "7",
       "price": "$244",
       "picture": "./images/Logitech G915 TKL.webp",
       "name": "Logitech G915"
     },
     {
-      "_id": "8",
+      "id": "8",
       "price": "$527",
       "picture": "./images/Razer Huntsman V2 Analog.webp",
       "name": "Razer Huntsman"
     },
     {
-      "_id": "9",
+      "id": "9",
       "price": "$547",
       "picture": "./images/Razer Turret for Xbox One.webp",
       "name": "Razer Turret"
     },
     {
-      "_id": "10",
+      "id": "10",
       "price": "$524",
       "picture": "./images/Razer BlackWidow V3 Mini HyperSpeed.webp",
       "name": "V3 Mini HyperSpeed"
     },
     {
-      "_id": "11",
+      "id": "11",
       "price": "$738",
       "picture": "./images/Roccat Vulcan Aimo 121.webp",
       "name": "Vulcan Aimo"
     },
     {
-      "_id": "12",
+      "id": "12",
       "price": "$452",
       "picture": "./images/SteelSeries Apex 5.webp",
       "name": "SteelSeries Apex 5"
