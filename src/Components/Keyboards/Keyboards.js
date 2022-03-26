@@ -16,6 +16,10 @@ const Keyboards = () => {
         const allSelectedItems = [...selectedKeyboards,item];
         setselectedKeyboards(allSelectedItems);
     }
+    const chooseAgain = (id) => {
+        const allSelectedItems = [];
+        setselectedKeyboards(allSelectedItems);
+    }
     return (
         <div>
             <Container>
@@ -27,16 +31,21 @@ const Keyboards = () => {
                             <Keyboard
                                 keyboard={keyboard}
                                 key={keyboard.id}
-                                addToCart={addToCart}
+                            addToCart={addToCart}
+                            
+                            
                             ></Keyboard>)
                     }
                     </Row>
                 </div>
                 <div className="col-md-3">
-                    <Cart selectedKeyboards={selectedKeyboards}></Cart>
+                        <Cart
+                            chooseAgain={chooseAgain}
+                            selectedKeyboards={selectedKeyboards}
+                        ></Cart>
                 </div>
                 </Row>
-                <Accordion defaultActiveKey="0">
+                <Accordion className='my-5' defaultActiveKey="0">
                     <Accordion.Item eventKey="0">
                     <Accordion.Header>How React Works</Accordion.Header>
                     <Accordion.Body>
@@ -48,13 +57,7 @@ const Keyboards = () => {
                     <Accordion.Item eventKey="1">
                     <Accordion.Header>How state works</Accordion.Header>
                     <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                        est laborum.
+                        State is a inbuild object in react . It represent the immidiate  situation of a component . In state , an initial situation/data can be set and it changes when the inbuild function of state runs.A vaiable and a function can be found by destucturing state.The change will occur when the user interect/changes data of that component
                     </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>

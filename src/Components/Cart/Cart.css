@@ -1,0 +1,9 @@
+.selected{
+    border-bottom: 2px solid red;
+    padding-bottom: 20px;
+}
+.main-cart{
+    position: sticky;
+    top: 100px;
+
+}
