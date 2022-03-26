@@ -1,0 +1,13 @@
+.cart-img{
+    height: 50px;
+    width: 100px;
+    border: 1px transparent;
+    border-radius: 5px;
+}
+.selected-keyboard{
+    margin-top: 20px;
+    padding: 20px 10px;
+    border: 2px solid silver;
+    border-radius: 15px;
+    align-items: center;
+}

@@ -1,8 +1,11 @@
 import React from 'react';
-import { Card ,Button } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 
 const Keyboard = (props) => {
-    const {name, id,price,picture} = props.keyboard;
+    const { name, id, price, picture } = props.keyboard;
+    const{addToCart}=props
     return (
         <div className='col-md-4 mb-4'>
             <Card >
@@ -12,7 +15,7 @@ const Keyboard = (props) => {
                     <Card.Text>
                         Price: {price}
                     </Card.Text>
-                    <Button variant="primary">Add to cart</Button>
+                    <Button onClick={ () =>addToCart(id)} variant="primary">Add to cart {<FontAwesomeIcon icon={faCartPlus} />}</Button>
                 </Card.Body>
             </Card>
         </div>
