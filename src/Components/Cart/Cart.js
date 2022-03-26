@@ -1,20 +1,20 @@
-import React from 'react';
+import { useState } from 'react';
+import RandomProduct from '../RandomProduct/RandomProduct';
 import SelectedKeyboard from '../SelectedKeyboard/SelectedKeyboard';
 
 const Cart = (props) => {
-    const { selectedKeyboards } = props;
-    console.log(selectedKeyboards);
+    let { selectedKeyboards } = props;
+    const [choosedKeyboard, setChoosedKeyboard] = useState([]);
     
-    const chooseOne = () => {
-        for (let i = 1; i++;) {
-            const randomNumber = Math.floor(Math.random() * 13);
-            const selectedId=selectedKeyboards.find(x=>parseInt(x.id)===randomNumber)
-            if(selectedId){
-                return selectedId
-            }
-        }
-        
-    }
+
+    
+
+    function chooseOne() {
+        const randomNumber = Math.floor(Math.random() * 3);
+        const choosenOne = selectedKeyboards[randomNumber];
+        setChoosedKeyboard([choosenOne]);
+    }   
+   
     return (
         <div>
             <h1>Selected Keyboards</h1>
@@ -23,9 +23,16 @@ const Cart = (props) => {
                     selectedKeyboards.map(keyboardToAdd=><SelectedKeyboard key={keyboardToAdd.id} keyboardToAdd={keyboardToAdd}></SelectedKeyboard>)
                 }
             </div>
-            <button onClick={()=>chooseOne()} className="btn btn-success my-2" >Choose One for me</button> <br/>
+            <button onClick={chooseOne} className="choose-btn btn btn-success my-2" >Choose One for me</button> <br/>
             <button className="btn btn-danger my-2">Choose Again</button>
+            <div>
+                <h1 mt-3>We can choose one for you</h1>
+            {
+                    choosedKeyboard.map(keyboardToAdd=><RandomProduct key={keyboardToAdd.id} keyboardToAdd={keyboardToAdd}></RandomProduct>)
+                }
+            </div>
         </div>
+        
     );
 }; 
 
